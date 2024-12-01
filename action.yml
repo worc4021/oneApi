@@ -5,7 +5,7 @@ inputs:
     description: 'URL to download the Intel oneAPI HPC Toolkit for Windows'
     default: https://registrationcenter-download.intel.com/akdlm/IRC_NAS/f07e32fa-b505-4b90-8a79-e328ce9ad9d6/intel-oneapi-hpc-toolkit-2025.0.0.822_offline.exe
     required: false
-  WINDOWS_CPP_COMPONENTS: 
+  WINDOWS_CPP_COMPONENTS: # If more than one component required then separate them with : (colon)
     description: 'Components to install for Intel oneAPI C++ compiler for Windows'
     default: intel.oneapi.win.cpp-dpcpp-common
     required: false

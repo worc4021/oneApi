@@ -23,11 +23,11 @@ runs:
       LINUX_CPP_COMPONENTS=""
       if [ "${{ inputs.icx }}" == "true" ]; then
         WINDOWS_CPP_COMPONENTS="${WINDOWS_CPP_COMPONENTS}intel.oneapi.win.cpp-dpcpp-common:"
-        LINUX_CPP_COMPONENTS="${LINUX_CPP_COMPONENTS}intel-oneapi-dpcpp-cpp-compiler:"
+        LINUX_CPP_COMPONENTS="${LINUX_CPP_COMPONENTS}intel.oneapi.lin.dpcpp-cpp-compiler:"
       fi
       if [ "${{ inputs.ifx }}" == "true" ]; then
         WINDOWS_CPP_COMPONENTS="${WINDOWS_CPP_COMPONENTS}intel.oneapi.win.ifort-compiler:"
-        LINUX_CPP_COMPONENTS="${LINUX_CPP_COMPONENTS}intel-oneapi-compiler-fortran:"
+        LINUX_CPP_COMPONENTS="${LINUX_CPP_COMPONENTS}intel.oneapi.lin.ifort-compiler:"
       fi
       if [ "${{ inputs.mkl }}" == "true" ]; then
         WINDOWS_CPP_COMPONENTS="${WINDOWS_CPP_COMPONENTS}intel.oneapi.win.mkl.devel:"

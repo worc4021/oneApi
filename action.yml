@@ -35,6 +35,7 @@ runs:
       fi
       echo "WINDOWS_CPP_COMPONENTS=${WINDOWS_CPP_COMPONENTS%:}" >> $GITHUB_ENV
       echo "LINUX_CPP_COMPONENTS=${LINUX_CPP_COMPONENTS%:}" >> $GITHUB_ENV
+    shell: bash
   - name: Install Intel oneAPI Windows
     if: runner.os == 'Windows'
     uses: worc4021/oneApi-windows@v1

@@ -43,6 +43,6 @@ runs:
       WINDOWS_CPP_COMPONENTS: ${{ env.WINDOWS_CPP_COMPONENTS }}
   - name: Install Intel oneAPI Linux
     if: runner.os == 'Linux'
-    uses: worc4021/oneApi-linux@v1
+    uses: worc4021/oneApi-linux@v2
     with:
       LINUX_CPP_COMPONENTS: ${{ env.LINUX_CPP_COMPONENTS }}

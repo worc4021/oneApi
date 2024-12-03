@@ -38,7 +38,7 @@ runs:
     shell: bash
   - name: Install Intel oneAPI Windows
     if: runner.os == 'Windows'
-    uses: worc4021/oneApi-windows@v1
+    uses: worc4021/oneApi-windows@v2
     with:
       WINDOWS_COMPONENTS: ${{ env.WINDOWS_CPP_COMPONENTS }}
   - name: Install Intel oneAPI Linux

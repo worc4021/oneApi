@@ -8,7 +8,7 @@ The use is very simple:
 windows-build:
     runs-on: windows-latest
     steps:
-    - uses: worc4021/oneApi@v7
+    - uses: worc4021/oneApi@v8
       with:
         icx: true
         ifx: false
